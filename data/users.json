@@ -1,1 +1,24 @@
-[]
+[
+    {   
+        "id": 1,
+        "name": "matias",
+        "email": "matias@gmail.com",
+        "password": "12345",
+        "last_name": "alvarellos"
+    },
+    {
+        "id": 2,
+        "name": "matias",
+        "email": "matias@gmail.com",
+        "password": "$2a$10$FRdQWsIsL4IjggZKuraRZ.PN9kW/YVR.PC9cGHeYT1ypEXvm2t8m2",
+        "last_name": "alvarellos"
+    },
+    {
+        "id": 3,
+        "name": "Cheddar",
+        "email": "matias@gmail.com",
+        "password": "$2a$10$02dp23GQ3nFydyrF7WorpeuxQSqfEMsXKO3ZWlfdjEqaO1mlxcIwK",
+        "last_name": "alvarellos",
+        "avatar": "avatar-1647899171635-.png"
+    }
+]
