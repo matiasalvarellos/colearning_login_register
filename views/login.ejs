@@ -17,23 +17,30 @@
               <form action="/users/login" method="POST">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="email" value="<%= locals.errors ? old.email : "" %>" class="form-control" autocomplete="off" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+                  <input type="password" class="form-control" autocomplete="off" name="password" id="exampleInputPassword1">
                 </div>
         
                 <div class="mb-3 form-check">
                   <input type="checkbox" name="remember" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label" for="exampleCheck1">Recordar usuario</label>
                 </div>
-        
+                
                 <button type="submit" class="btn btn-primary">
                   Submit
                 </button>
               </form>
+              
+              <% if(locals.errors){ %>
+                <% errors.forEach(error=>{ %>
+                  <p> <%= error.msg %> </p>
+                <% }) %> 
+              <% } %> 
+              
             </div> 
     </body>
 </html>

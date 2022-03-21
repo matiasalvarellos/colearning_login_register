@@ -1,1 +1,86 @@
-[]
+[
+    {
+        "email": "",
+        "name": "",
+        "last_name": "",
+        "password": "$2a$10$jSv4APcwb9Q.zbK62miwAOLAt98wSv2DFGC44FAowRvlH1/SSobd6"
+    },
+    {
+        "email": "",
+        "name": "",
+        "last_name": "",
+        "password": "$2a$10$gEu4Z.wAf2xrF83qSJia2uQmSaX.6DaKTCIVHUS9zv4pi518iET0m"
+    },
+    {
+        "email": "",
+        "name": "",
+        "last_name": "",
+        "password": "$2a$10$DU7jH18ylT4/ZN/.xlDFyuUiJ3qFTtXnRbFr7kv2g3TizaZtGTyPe"
+    },
+    {
+        "email": "",
+        "name": "",
+        "last_name": "",
+        "password": "$2a$10$nde/zf9qWRhfcgGuA7Pv9.DOaJLD9R.n8Xy3RaGUKbgXcaKLC3kjK"
+    },
+    {
+        "email": "",
+        "name": "",
+        "last_name": "",
+        "password": "$2a$10$dsXPlGM4WahE1beNKKreUefIj2iCpSEO.pCtd0HiuIU7RcpnUs2vy"
+    },
+    {
+        "email": "",
+        "name": "",
+        "last_name": "",
+        "password": "$2a$10$hxORzDl6Dm78CuugSgfjaOsamz45WV2/1oZLfOxPoWTVFKbdxXczG"
+    },
+    {
+        "email": "",
+        "name": "",
+        "last_name": "",
+        "password": "$2a$10$I.UTsCTezFEoh0i0a4aumOVX5vO9klV1e0YTqKbgr8ZuZiMN2Gaqa"
+    },
+    {
+        "email": "",
+        "name": "",
+        "last_name": "",
+        "password": "$2a$10$nlGhvRQ86V9S7cuAHiWELuG41NAD2/hRoVkkUI5esasXzPbTMNskC"
+    },
+    {
+        "email": "",
+        "name": "",
+        "last_name": "",
+        "password": "$2a$10$wMdg9HODjgt3GX0cUwtXXO36BKRLbV29Xs8V5o.HY5cL6/sz1uH4q"
+    },
+    {
+        "email": "",
+        "name": "",
+        "last_name": "asd",
+        "password": "$2a$10$m987.Opk/7S8xows4yFpS.TdeCux5XSGfGhND7bfV3DuEa9UmKLim"
+    },
+    {
+        "email": "asd@asd.com",
+        "name": "asd",
+        "last_name": "asd",
+        "password": "$2a$10$wThrKcDubmW7SO0ritUd0eoN93iu9HUtBjj72jH4qc2uwWk9smPUm"
+    },
+    {
+        "email": "s@asd",
+        "name": "",
+        "last_name": "asd",
+        "password": "$2a$10$zejBp/0xqeXCvRxtF5XsBuW4rH2kDJbLNpqsphdgwwKOsKQV82Bqe"
+    },
+    {
+        "email": "s@asd",
+        "name": "",
+        "last_name": "asd",
+        "password": "$2a$10$jzFMxIEd4AS6KbPxlg7S6u/qRZ9dzzhzIhe3Y4KoyrZxPWpA0HrpO"
+    },
+    {
+        "email": "s@asd",
+        "name": "",
+        "last_name": "asd",
+        "password": "$2a$10$DZCemSnt9gWQ2rwHlIT0vuEjckHnxyjSwf8/66m4JCBVWGSJomkbW"
+    }
+]

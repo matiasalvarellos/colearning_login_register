@@ -16,17 +16,17 @@
     
               <div class="mb-3">  
                 <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" name="email" id="email">
+                <input type="email" value="<%= locals.errors ? old.email : "" %>" autocomplete="off" class="form-control" name="email" id="email">
               </div>
     
               <div class="mb-3">
                 <label for="name" class="form-label">Nombre</label>
-                <input type="text" class="form-control" name="name" id="name">
+                <input type="text" value="<%= locals.errors ? old.name : "" %>" autocomplete="off" class="form-control" name="name" id="name">
               </div>
     
               <div class="mb-3">
                 <label for="last_name" class="form-label">Apellido</label>
-                <input type="text" class="form-control" name="last_name" id="last_name">
+                <input type="text" value="<%= locals.errors ? old.last_name : "" %>" autocomplete="off" class="form-control" name="last_name" id="last_name">
               </div>
               
               <div class="mb-3">
@@ -38,6 +38,7 @@
                 <label for="avatar" class="form-label"> Avatar</label>
                 <input type="file" class="form-control" id="avatar" name="avatar">
               </div>
+              
     
               <div class="mb-3">
                 <button type="submit" class="btn btn-primary">
@@ -45,6 +46,12 @@
                 </button>
               </div>
             </form>
+            
+            <% if(locals.errors){ %>
+              <% errors.forEach(error=>{ %>
+                <p> <%= error.msg %> </p>
+              <% }) %> 
+            <% } %> 
     
         </div>
     </body>
