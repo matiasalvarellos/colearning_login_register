@@ -18,11 +18,17 @@
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
                   <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <% if(locals.errorsLogin && locals.errorsLogin.email){ %>
+                    <span style="color: red;"> <%= locals.errorsLogin.email.msg %> </span>
+                  <% } %> 
                 </div>
                 
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Password</label>
                   <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+                  <% if(locals.errorsLogin && locals.errorsLogin.password){ %>
+                    <span style="color: red;"> <%= locals.errorsLogin.password.msg %> </span>
+                  <% } %> 
                 </div>
         
                 <div class="mb-3 form-check">
@@ -34,6 +40,9 @@
                   Submit
                 </button>
               </form>
+              <% if(locals.errorMsg){ %>
+                <span style="color: red;"> <%= errorMsg %> </span>
+              <% } %> 
             </div> 
     </body>
 </html>

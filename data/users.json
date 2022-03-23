@@ -1,5 +1,5 @@
 [
-    {   
+    {
         "id": 1,
         "name": "matias",
         "email": "matias@gmail.com",
@@ -20,5 +20,13 @@
         "password": "$2a$10$02dp23GQ3nFydyrF7WorpeuxQSqfEMsXKO3ZWlfdjEqaO1mlxcIwK",
         "last_name": "alvarellos",
         "avatar": "avatar-1647899171635-.png"
+    },
+    {
+        "id": 4,
+        "name": "alumnos ",
+        "email": "alumnos@gmail.com",
+        "password": "$2a$10$DT9ZHbDYwgH62cWqMJcFR.MnwGBhCT5XZ3bb0yinQdTEzJJb6EjDu",
+        "last_name": "asd",
+        "avatar": "avatar-1648072076305-.png"
     }
 ]

@@ -8,7 +8,14 @@ function findAll(){
 }
 
 const milanesa = {
-    login:[],
+    login:[
+        check("email")
+            .notEmpty()
+            .withMessage("campo email vacio"),
+        check("password")
+            .notEmpty()
+            .withMessage("campo password vacio")
+    ],
     register:[
         check("email")
             .notEmpty()
