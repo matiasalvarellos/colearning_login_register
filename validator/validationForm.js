@@ -1,11 +1,25 @@
 const { check, body } = require("express-validator")
 const fs = require("fs");
 const path = require("path");
-const users = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/users.json")))
+
+function findAll(){
+    const users = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/users.json")))
+    return users
+}
 
 
 const milanesa = {
-    login:[],
+    login:[
+        check("email")
+            .notEmpty()
+            .withMessage("Campo email vacio")
+            .bail()
+            .isEmail()
+            .withMessage("Formato de email invalido"),
+        check("password")
+            .notEmpty()
+            .withMessage("campo password incompleto")
+    ],
     register:[
         check("email")
             .notEmpty()
@@ -15,6 +29,7 @@ const milanesa = {
             .withMessage("formato de email incorrecto")
             .bail()
             .custom(function(value){
+                let users = findAll()
                 //busco al usuario
                 let userFound = users.find(function(user){
                     return user.email == value

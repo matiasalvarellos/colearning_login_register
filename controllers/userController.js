@@ -37,5 +37,41 @@ module.exports = {
 
         res.redirect("/users/login");
 
+    },
+    processLogin: function(req, res){
+        const errors = validationResult(req);
+        if(req.body.remember){
+            console.log(req.body.remember)
+        }
+        if(errors.errors.length > 0){
+            res.render("login", {errors: errors.errors})
+        }
+        
+        let userFound = users.find(function(user){
+            return user.email == req.body.email && bcrypt.compareSync(req.body.password, user.password)
+        })
+        
+        if(userFound){
+            //dejar al usuario en sesion
+            delete userFound.password;
+
+            let usuarioInfo ={
+                email: userFound.email,
+                name: userFound.name,
+                last_name: userFound.last_name,
+                avatar: userFound.avatar
+            }
+
+            req.session.user = usuarioInfo;
+
+            if(req.body.remember){
+                res.cookie("user", userFound.id, {maxAge: 60000 * 24})
+            }
+            res.redirect("/user")
+        }else{
+            res.render("login", { errorLogin: "Error credenciales incorrectas!" })
+        }
+        
+
     }
 }

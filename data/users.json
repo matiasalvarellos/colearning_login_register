@@ -1,24 +1,42 @@
 [
-    {   
+    {
         "id": 1,
         "name": "matias",
         "email": "matias@gmail.com",
-        "password": "12345",
-        "last_name": "alvarellos"
+        "password": "$2a$10$q6s9VRxRNRNNwnjtI9GlZu5BIvLesYaNyAly8jrGGHe7YWCTOFPc2",
+        "last_name": "alvarellos",
+        "avatar": "avatar-1648061227254-.png"
     },
     {
         "id": 2,
-        "name": "matias",
-        "email": "matias@gmail.com",
-        "password": "$2a$10$FRdQWsIsL4IjggZKuraRZ.PN9kW/YVR.PC9cGHeYT1ypEXvm2t8m2",
-        "last_name": "alvarellos"
+        "name": "prueba",
+        "email": "prueba@gmail.com",
+        "password": "$2a$10$Z4qSEm8nqfu6Rb1foE52Te2278aotjkqvkhBwBod.NmkwOGheYXw2",
+        "last_name": "alv",
+        "avatar": "image-default"
     },
     {
         "id": 3,
-        "name": "Cheddar",
-        "email": "matias@gmail.com",
-        "password": "$2a$10$02dp23GQ3nFydyrF7WorpeuxQSqfEMsXKO3ZWlfdjEqaO1mlxcIwK",
-        "last_name": "alvarellos",
-        "avatar": "avatar-1647899171635-.png"
+        "name": "asd",
+        "email": "prueba3@gmail.com",
+        "password": "$2a$10$UP3md3rHVYtc9wkvV5/pBO/opGFTGrGa.lV2YQll.5dAm1NRSYbNK",
+        "last_name": "asd",
+        "avatar": "image-default"
+    },
+    {
+        "id": 4,
+        "name": "asd",
+        "email": "prueba3@gmail.com",
+        "password": "$2a$10$eGuKmn.0I7Idh7OBEJQWQOoKHbWifL38sI6J1xj5TVs5CDUPbXX5e",
+        "last_name": "asd",
+        "avatar": "image-default"
+    },
+    {
+        "id": 5,
+        "name": "matias",
+        "email": "asd@gmail.com",
+        "password": "$2a$10$0/bxbQsOqQo2hpDfh9MBZ.Gmql8FxiOTDoHv/KcoZir0Clvq3M0Wi",
+        "last_name": "asd",
+        "avatar": "image-default"
     }
 ]
