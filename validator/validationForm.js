@@ -7,7 +7,7 @@ function findAll(){
     return users;
 }
 
-const milanesa = {
+const validator = {
     login:[
         check("email")
             .notEmpty()
@@ -50,4 +50,4 @@ const milanesa = {
     ]
 }
 
-module.exports = milanesa
+module.exports = validator
