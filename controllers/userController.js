@@ -3,8 +3,6 @@ const path = require("path");
 const bcrypt = require("bcryptjs");
 const users = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/users.json")))
 const { validationResult } = require("express-validator");
-const req = require("express/lib/request");
-const res = require("express/lib/response");
 
 function writeFile(array){
     const arrayString = JSON.stringify(array, null, 4)
@@ -78,4 +76,5 @@ module.exports = {
         res.clearCookie("user");
         res.redirect("/");
     }
+    
 }
