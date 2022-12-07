@@ -1,6 +1,7 @@
 const { check, body } = require("express-validator")
 const fs = require("fs");
 const path = require("path");
+const db = require("../database/models");
 
 function findAll(){
     const users = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/users.json")));
@@ -25,17 +26,26 @@ const validator = {
             .withMessage("formato de email incorrecto")
             .bail()
             .custom(function(value){
-                let users = findAll()
-                //busco al usuario
-                let userFound = users.find(function(user){
-                    return user.email == value
+                // let users = findAll()
+                // //busco al usuario
+                // let userFound = users.find(function(user){
+                //     return user.email == value
+                // })
+                // //si existe un usuario devuelvo el error
+                // if(userFound){
+                //     throw new Error("Email ya registrado!");
+                // }
+                // //sino devuelvo true
+                // return true
+                return db.User.findOne({
+                    where:{
+                        email: value
+                    }
+                }).then(user => {
+                    if(user){
+                        return Promise.reject("Email ya registrado!")
+                    }
                 })
-                //si existe un usuario devuelvo el error
-                if(userFound){
-                    throw new Error("Email ya registrado!");
-                }
-                //sino devuelvo true
-                return true
             })
             ,
         check("name")
